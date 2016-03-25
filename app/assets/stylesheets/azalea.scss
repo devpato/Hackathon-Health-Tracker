@@ -11,7 +11,12 @@ body {
     width: 100%;
     height: 100%;
 }
-
+button a{
+    color: white;
+}
+a:hover{
+    color: white;
+}
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -176,6 +181,10 @@ hr.small {
     background-size: cover;
     -o-background-size: cover;
     color: #238E68;
+}
+.verde{
+   background-color: #238E68; 
+   color: white;
 }
 
 /* About */
