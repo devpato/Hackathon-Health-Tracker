@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'azalea/index'
+  resources :users
 
+  get 'azalea/index'
   root 'azalea#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
