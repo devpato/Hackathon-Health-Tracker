@@ -15,13 +15,20 @@ body {
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
+.signUp{
+    margin-right: 6%;
+}
+.signUps{
+   cursor: pointer;
+}
 .text-vertical-center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
-
+.fa-fw{
+    color: #238E68;
+}
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
@@ -33,14 +40,14 @@ body {
 
 .btn-dark {
     border-radius: 0;
-    color: #fff;
-    background-color: rgba(0,0,0,0.4);
+    background-color: #238E68;
+    color: white;
 }
 
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
-    color: #fff;
+    color: white;
     background-color: rgba(0,0,0,0.7);
 }
 
@@ -53,7 +60,7 @@ body {
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active {
-    color: #333;
+    color: white;
     background-color: rgba(255,255,255,0.8);
 }
 
@@ -80,7 +87,15 @@ hr.small {
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
-
+.text-white{
+    color: white;
+    background-color: #238E68;
+}
+.text-green{
+    color: #238E68;
+    background-color: white;
+}
+.s
 .sidebar-nav {
     position: absolute;
     top: 0;
@@ -160,6 +175,7 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    color: #238E68;
 }
 
 /* About */
@@ -172,6 +188,8 @@ hr.small {
 
 .services {
     padding: 50px 0;
+    background-color: #238E68;
+    color:white;
 }
 
 .service-item {
@@ -196,6 +214,7 @@ hr.small {
 
 .portfolio {
     padding: 50px 0;
+    color: #238E68;
 }
 
 .portfolio-item {
