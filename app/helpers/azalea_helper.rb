@@ -1,0 +1,2 @@
+module AzaleaHelper
+end
