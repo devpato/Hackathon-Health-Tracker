@@ -10,7 +10,8 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-     @user = User.find(params[:id])
+    @current_user = User.find_by(id: params[:id])
+    @entries = @current_user.food_entries
   end
 
   # GET /users/new
