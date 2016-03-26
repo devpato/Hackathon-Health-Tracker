@@ -24,7 +24,9 @@ class GoalsController < ApplicationController
   # POST /goals
   # POST /goals.json
   def create
-    @goal = Goal.new(goal_params)
+    @user = User.find_by(session[:user_id])
+
+    @goal = @user.goals.new(goal_params)
 
     respond_to do |format|
       if @goal.save
@@ -69,6 +71,6 @@ class GoalsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def goal_params
-      params.require(:goal).permit(:type_id, :title, :end, :date)
+      params.require(:goal).permit(:type_id, :title, :end, :date, :user_id)
     end
 end

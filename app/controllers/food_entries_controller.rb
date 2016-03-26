@@ -15,6 +15,7 @@ class FoodEntriesController < ApplicationController
   # GET /food_entries/new
   def new
     @food_entry = FoodEntry.new
+    @foods = FoodEntry.find(params[:id])
   end
 
   # GET /food_entries/1/edit
@@ -31,12 +32,12 @@ class FoodEntriesController < ApplicationController
                                        date: Time.now)
 
     respond_to do |format|
-      if @food_entry.save
-        format.html { redirect_to @food_entry, notice: 'Food entry was successfully created.' }
-        format.json { render :show, status: :created, location: @food_entry }
+      if @entry.save
+        format.html { redirect_to @entry, notice: 'Food entry was successfully created.' }
+        format.json { render :show, status: :created, location: @entry }
       else
         format.html { render :new }
-        format.json { render json: @food_entry.errors, status: :unprocessable_entity }
+        format.json { render json: @entry.errors, status: :unprocessable_entity }
       end
     end
   end
