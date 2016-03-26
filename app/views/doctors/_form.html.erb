@@ -20,12 +20,20 @@
     <%= f.text_field :lastName %>
   </div>
   <div class="field">
-    <%= f.label :numPatients %><br>
-    <%= f.number_field :numPatients %>
+    <%= f.label :area %><br>
+    <%= f.text_field :area %>
   </div>
   <div class="field">
-    <%= f.label :sex %><br>
-    <%= f.number_field :sex %>
+    <%= f.label :age %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :pictureName %><br>
+    <%= f.text_field :pictureName %>
+  </div>
+  <div class="field">
+    <%= f.label :picture %><br>
+    <%= f.file_field :picture %>
   </div>
   <div class="actions">
     <%= f.submit %>

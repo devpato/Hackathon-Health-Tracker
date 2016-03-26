@@ -3,11 +3,15 @@
 one:
   name: MyString
   lastName: MyString
-  numPatients: 1
-  sex: 1
+  area: MyString
+  age: 1
+  pictureName: MyString
+  picture: MyString
 
 two:
   name: MyString
   lastName: MyString
-  numPatients: 1
-  sex: 1
+  area: MyString
+  age: 1
+  pictureName: MyString
+  picture: MyString

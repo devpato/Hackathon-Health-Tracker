@@ -11,13 +11,23 @@
 </p>
 
 <p>
-  <strong>Numpatients:</strong>
-  <%= @doctor.numPatients %>
+  <strong>Area:</strong>
+  <%= @doctor.area %>
 </p>
 
 <p>
-  <strong>Sex:</strong>
-  <%= @doctor.sex %>
+  <strong>Age:</strong>
+  <%= @doctor.age %>
+</p>
+
+<p>
+  <strong>Picturename:</strong>
+  <%= @doctor.pictureName %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@doctor.picture_url, :width => 80) if @doctor.picture.present? %>
 </p>
 
 <%= link_to 'Edit', edit_doctor_path(@doctor) %> |

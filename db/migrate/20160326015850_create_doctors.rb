@@ -3,8 +3,10 @@ class CreateDoctors < ActiveRecord::Migration
     create_table :doctors do |t|
       t.string :name
       t.string :lastName
-      t.integer :numPatients
-      t.integer :sex
+      t.string :area
+      t.integer :age
+      t.string :pictureName
+      t.string :picture
 
       t.timestamps null: false
     end
