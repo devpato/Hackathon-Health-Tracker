@@ -33,7 +33,10 @@ gem 'carrierwave'
 
 #morrisJS
 gem 'morrisjs-rails'
-gem 'raphael-rails' 
+gem 'raphael-rails'
+
+#chartkick
+gem "chartkick" 
 
 # Use Unicorn as the app server
 # gem 'unicorn'

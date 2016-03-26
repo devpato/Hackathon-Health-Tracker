@@ -22,7 +22,16 @@ class UsersController < ApplicationController
   # GET /users/1/edit
   def edit
   end
+
   def tracking
+    @current_user = User.find_by(id: params[:id])
+    @today = Time.now.to_date
+    @entries = @current_user.food_entries
+    @foods = []
+    @entries.each do |entry|
+      food = Food.find_by(id: entry.food_id)
+      @foods.push(food)
+    end
   end
 
 
