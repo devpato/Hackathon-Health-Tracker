@@ -1,34 +1,40 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
-
+  <div class="ih-item circle effect1 col-sm-2   "><a href="#">
+        <div class="spinner"><div ><%= image_tag(@food.picture_url,:class=>"img-circle pull-left") if @food.picture.present? %></div></div>
+        
+        </a>
+  </div>
+  <br>
+  <h1 class="pull-left col-sm-9">Food Info</h1>
+  <br><br><br><br><br><br><br><br><br>
+<div class="container">
 <p>
-  <strong>Res id:</strong>
+  <label>Res id:</label>
   <%= @food.res_Id %>
 </p>
-
+<hr>
 <p>
-  <strong>Cal:</strong>
+  <label>Cal:</label>
   <%= @food.cal %>
 </p>
-
+<hr>
 <p>
-  <strong>Fat:</strong>
+  <label>Fat:</label>
   <%= @food.fat %>
 </p>
-
+<hr>
 <p>
-  <strong>Sugar:</strong>
+  <label>Sugar:</label>
   <%= @food.sugar %>
 </p>
-
+<hr>
 <p>
-  <strong>Location:</strong>
+  <label>Location:</label>
   <%= @food.location %>
 </p>
-
-<p>
-  <strong>Picture:</strong>
-  <%= image_tag(@food.picture_url, :width => 80) if @food.picture.present? %>
-</p>
-
+<hr>
+</div>
 <%= link_to 'Edit', edit_food_path(@food) %> |
 <%= link_to 'Back', foods_path %>
+</div>

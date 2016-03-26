@@ -1,6 +1,11 @@
+<div class="container">
 <h1>Editing Food</h1>
 
 <%= render 'form' %>
-
+<div class="actions">
+ 		<button type="submit" class="btn verde" ><%= link_to 'Edit Food', foods_path %></button>
+ </div>
+ <hr>
 <%= link_to 'Show', @food %> |
 <%= link_to 'Back', foods_path %>
+</div>
