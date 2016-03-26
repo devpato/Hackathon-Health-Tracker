@@ -33,6 +33,7 @@ class UsersController < ApplicationController
       food = Food.find_by(id: entry.food_id)
       @foods.push(food)
     end
+    @entries = @current_user.food_entries
     @goals = @current_user.goals
   end
 
