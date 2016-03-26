@@ -27,7 +27,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @food.picture %>
+  <%= image_tag(@food.picture_url, :width => 80) if @food.picture.present? %>
 </p>
 
 <%= link_to 'Edit', edit_food_path(@food) %> |
