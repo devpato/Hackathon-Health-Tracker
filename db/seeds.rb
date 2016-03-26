@@ -21,3 +21,7 @@ Food.delete_all
                         :location => 'Student Union',
                         :picture => open('app/assets/images/sandwich.jpg'),
                         :name => 'Chicken Sandwich')
+
+@entry = FoodEntry.create(:user_id => @user1.id,
+                        :food_id => @sandwich.id,
+                        :date => Time.now)

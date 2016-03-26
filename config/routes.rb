@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :food_entries
   resources :goals
   resources :foods
   resources :foods
