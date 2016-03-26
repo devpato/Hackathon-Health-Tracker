@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  resources :doctors
+  resources :doctors
+  resources :profilepics
   resources :users
-
   get 'azalea/index'
   root 'azalea#index'
 
