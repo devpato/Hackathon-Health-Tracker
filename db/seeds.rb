@@ -25,12 +25,12 @@ Goal.delete_all
                         :name => 'Chicken Sandwich')
 
 @meal = Food.create(:rest_name => 'Chick-fil-A',
-                        :cal => 618,
-                        :fat => 32,
-                        :sugar => 14,
+                        :cal => 1218,
+                        :fat => 59,
+                        :sugar => 34,
                         :location => 'Student Union',
-                        :picture => open('app/assets/images/sandwich.jpg'),
-                        :name => 'Chicken Sandwich')
+                        :picture => open('app/assets/images/meal.jpg'),
+                        :name => 'Chicken Sandwich Meal')
 
 @food3 = Food.create(:rest_name => 'Chick-fil-A',
                      :cal => 289,

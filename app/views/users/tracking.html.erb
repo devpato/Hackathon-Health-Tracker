@@ -86,10 +86,10 @@
   <tbody class="searchablez">
     <% Food.all.each do |food| %>
       <tr>
+        <td><%= food.name %></td>
         <td><%= food.rest_name %></td>
         <td><%= food.cal %></td>
         <td><%= food.fat %></td>
-        <td><%= food.sugar %></td>
         <td><%= food.location %></td>
         <td><%= image_tag(food.picture_url, :width => 80) if food.picture.present? %></td>
         <td><%= button_to 'Add',
