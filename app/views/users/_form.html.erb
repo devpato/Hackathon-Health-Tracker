@@ -42,18 +42,15 @@
   </div>
   <div class="field">
     <%=f.label :picture %><br>    
-    <%= f.file_field :picture%>
+    <%= f.file_field :picture, :class=>"btn verde"%>
   </div>
   <div class="field">
     <%= f.label :username %><br>
     <%= f.text_field :username,:class=>"form-control" %>
   </div>
-  <div class=field">
+  <div class="field">
     <%= f.label :password %><br>
     <%= f.text_field :password,:class=>"form-control"%>
   </div>
   <br>
-  <div class="actions">
-  <button type="submit" class="btn verde" ><%= link_to 'Create Patient', users_path %></button>
-  </div>
 <% end %>
