@@ -25,3 +25,27 @@ Food.delete_all
 @entry = FoodEntry.create(:user_id => @user1.id,
                         :food_id => @sandwich.id,
                         :date => Time.now)
+
+@food1 = Food.create(:rest_name => "Moe's",
+                     :cal => 890,
+                     :fat => 30,
+                     :sugar => 17,
+                     :location => "Main Campus",
+                     :picture => open('app/assets/images/burrito.jpg'),
+                     :name => 'Homewrecker burrito')
+
+@food2 = Food.create(:rest_name => "Papa John's",
+                     :cal => 270,
+                     :fat => 42,
+                     :sugar => 18,
+                     :location => "Main Campus",
+                     :picture => open('app/assets/images/pizza.jpg'),
+                     :name => 'Pepperoni Pizza Slice')
+
+@food3 = Food.create(:rest_name => 'Chick-fil-A',
+                     :cal => 289,
+                     :fat => 3,
+                     :sugar => 7,
+                     :location => "Main Campus",
+                     :picture => open('app/assets/images/salad.jpg'),
+                     :name => 'House Salad')
