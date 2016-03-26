@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+source 'http://gems.github.com'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
@@ -37,6 +37,9 @@ gem 'raphael-rails'
 
 #chartkick
 gem "chartkick" 
+gem "groupdate"
+
+gem 'googlecharts'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
