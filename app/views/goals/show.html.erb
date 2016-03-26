@@ -1,24 +1,32 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
-
+<br>
+  <h1 class="col-sm-9">Patient Goals</h1>
+<div class="container">
+  <br><br><br><br>
+<div class="container">
 <p>
-  <strong>Type:</strong>
+  <label>Type:</label>
   <%= @goal.type_id %>
 </p>
-
+<hr>
 <p>
-  <strong>Title:</strong>
+  <label>Title:</label>
   <%= @goal.title %>
 </p>
-
+<hr>
 <p>
-  <strong>End:</strong>
+  <label>End:</label>
   <%= @goal.end %>
 </p>
-
+<hr>
 <p>
-  <strong>Date:</strong>
+  <label>Date:</label>
   <%= @goal.date %>
 </p>
-
+<hr>
 <%= link_to 'Edit', edit_goal_path(@goal) %> |
 <%= link_to 'Back', goals_path %>
+<hr>
+  </div>
+</div>
