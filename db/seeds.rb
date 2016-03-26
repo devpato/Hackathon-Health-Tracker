@@ -24,6 +24,22 @@ Goal.delete_all
                         :picture => open('app/assets/images/sandwich.jpg'),
                         :name => 'Chicken Sandwich')
 
+@meal = Food.create(:rest_name => 'Chick-fil-A',
+                        :cal => 618,
+                        :fat => 32,
+                        :sugar => 14,
+                        :location => 'Student Union',
+                        :picture => open('app/assets/images/sandwich.jpg'),
+                        :name => 'Chicken Sandwich')
+
+@food3 = Food.create(:rest_name => 'Chick-fil-A',
+                     :cal => 289,
+                     :fat => 3,
+                     :sugar => 7,
+                     :location => "Main Campus",
+                     :picture => open('app/assets/images/salad.jpg'),
+                     :name => 'House Salad')
+
 @entry = FoodEntry.create(:user_id => @user1.id,
                         :food_id => @sandwich.id,
                         :date => Time.now)
@@ -51,10 +67,4 @@ Goal.delete_all
                      :picture => open('app/assets/images/pizza.jpg'),
                      :name => 'Pepperoni Pizza Slice')
 
-@food3 = Food.create(:rest_name => 'Chick-fil-A',
-                     :cal => 289,
-                     :fat => 3,
-                     :sugar => 7,
-                     :location => "Main Campus",
-                     :picture => open('app/assets/images/salad.jpg'),
-                     :name => 'House Salad')
+
