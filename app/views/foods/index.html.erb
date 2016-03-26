@@ -5,9 +5,10 @@
 <table>
   <thead>
     <tr>
-      <th>Res id</th>
-      <th>Cal</th>
-      <th>Fat</th>
+      <th>Name</th>
+      <th>Restaurant</th>
+      <th>Calories</th>
+      <th>Fat grams</th>
       <th>Sugar</th>
       <th>Location</th>
       <th>Picture</th>
@@ -18,12 +19,11 @@
   <tbody>
     <% @foods.each do |food| %>
       <tr>
-        <td><%= food.res_Id %></td>
+        <td><%= food.rest_name %></td>
         <td><%= food.cal %></td>
         <td><%= food.fat %></td>
         <td><%= food.sugar %></td>
         <td><%= food.location %></td>
-        <td><%= food.picture %></td>
         <td><%= link_to 'Show', food %></td>
         <td><%= link_to 'Edit', edit_food_path(food) %></td>
         <td><%= link_to 'Destroy', food, method: :delete, data: { confirm: 'Are you sure?' } %></td>
