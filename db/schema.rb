@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20160326135507) do
+=======
+ActiveRecord::Schema.define(version: 20160326131606) do
+>>>>>>> 7e716217fea5b9234063c88ccf642c9277ad8dc3
 
   create_table "doctors", force: :cascade do |t|
     t.string   "name"
@@ -25,7 +29,7 @@ ActiveRecord::Schema.define(version: 20160326135507) do
   end
 
   create_table "foods", force: :cascade do |t|
-    t.integer  "res_Id"
+    t.string   "rest_name"
     t.integer  "cal"
     t.integer  "fat"
     t.integer  "sugar"
@@ -33,6 +37,7 @@ ActiveRecord::Schema.define(version: 20160326135507) do
     t.string   "picture"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "name"
   end
 
   create_table "goals", force: :cascade do |t|

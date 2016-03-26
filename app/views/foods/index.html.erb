@@ -10,9 +10,10 @@
 <table class="table table-striped">
   <thead >
     <tr>
-      <th>Restaurant id</th>
-      <th>Cal</th>
-      <th>Fat</th>
+      <th>Name</th>
+      <th>Restaurant</th>
+      <th>Calories</th>
+      <th>Fat grams</th>
       <th>Sugar</th>
       <th>Location</th>
       <th>Picture</th>
@@ -24,7 +25,7 @@
   <tbody class="searchable">
     <% @foods.each do |food| %>
       <tr>
-        <td><%= food.res_Id %></td>
+        <td><%= food.rest_name %></td>
         <td><%= food.cal %></td>
         <td><%= food.fat %></td>
         <td><%= food.sugar %></td>
