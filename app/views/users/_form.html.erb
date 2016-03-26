@@ -1,3 +1,4 @@
+<div class="col-sm-4">
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
@@ -13,45 +14,46 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name,:class=>"form-control" %>
   </div>
   <div class="field">
     <%= f.label :lastName %><br>
-    <%= f.text_field :lastName %>
+    <%= f.text_field :lastName,:class=>"form-control" %>
   </div>
   <div class="field">
     <%= f.label :age %><br>
-    <%= f.number_field :age %>
+    <%= f.number_field :age,:class=>"form-control" %>
   </div>
   <div class="field">
     <%= f.label :sex %><br>
-    <%= f.text_field :sex %>
+    <%= f.text_field :sex,:class=>"form-control" %>
   </div>
   <div class="field">
     <%= f.label :height %><br>
-    <%= f.text_field :height %>
+    <%= f.text_field :height,:class=>"form-control" %>
   </div>
   <div class="field">
     <%= f.label :weight %><br>
-    <%= f.text_field :weight %>
+    <%= f.text_field :weight,:class=>"form-control" %>
   </div>
   <div class="field">
     <%= f.label :pictureName %><br>
-    <%= f.text_field :pictureName %>
+    <%= f.text_field :pictureName,:class=>"form-control" %>
   </div>
   <div class="field">
-    <%= f.label :picture %><br>    
-    <%= f.file_field :picture %>
+    <%=f.label :picture %><br>    
+    <%= f.file_field :picture, :class=>"btn verde"%>
   </div>
   <div class="field">
     <%= f.label :username %><br>
-    <%= f.text_field :username %>
+    <%= f.text_field :username,:class=>"form-control" %>
   </div>
   <div class="field">
     <%= f.label :password %><br>
-    <%= f.text_field :password %>
+    <%= f.text_field :password,:class=>"form-control"%>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+  <br>
 <% end %>

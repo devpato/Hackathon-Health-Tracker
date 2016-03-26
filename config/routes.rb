@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   resources :profilepics
   resources :users
   get 'azalea/index'
+  get 'users/new'
+  get 'doctors/new'
   root 'azalea#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

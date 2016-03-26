@@ -31,39 +31,13 @@
 </head>
 
 <body>
-
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >Azalea Health</a>
-            </li>
-            <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
-            </li>
-            <li>
-                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
-            </li>
-        </ul>
-    </nav>
-
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
             <h1>Azalea Health</h1>
             <br>
-            <div class="btn verde"><a href='#services'>Learn More</a></div>
+            <button type="button" class="btn verde" ><a href='#services'>Learn More</a></button>
         </div>
     </header>
 
@@ -75,14 +49,17 @@
                     <h2>Sign up</h2>
                     <br>
                     <span class="fa-stack fa-4x signUp signUps">
+                    <a href="<%=new_doctor_path%>">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-user-md fa-stack-1x text-white"></i>
+                    </a>
                     </span>
+                    <a href="<%=new_user_path%>">
                     <span class="fa-stack fa-4x signUps">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-user fa-stack-1x text-white"></i>
                     </span>
-                    
+                    </a>
                 </div>
             </div>
             <!-- /.row -->
