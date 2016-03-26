@@ -1,3 +1,4 @@
+<div class="col-sm-4">
 <%= form_for(@doctor) do |f| %>
   <% if @doctor.errors.any? %>
     <div id="error_explanation">
@@ -13,29 +14,27 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name,:class=>"form-control" %>
   </div>
   <div class="field">
     <%= f.label :lastName %><br>
-    <%= f.text_field :lastName %>
+    <%= f.text_field :lastName,:class=>"form-control" %>
   </div>
   <div class="field">
     <%= f.label :area %><br>
-    <%= f.text_field :area %>
+    <%= f.text_field :area,:class=>"form-control" %>
   </div>
   <div class="field">
     <%= f.label :age %><br>
-    <%= f.number_field :age %>
+    <%= f.number_field :age,:class=>"form-control" %>
   </div>
   <div class="field">
     <%= f.label :pictureName %><br>
-    <%= f.text_field :pictureName %>
+    <%= f.text_field :pictureName,:class=>"form-control" %>
   </div>
   <div class="field">
     <%= f.label :picture %><br>
-    <%= f.file_field :picture %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <%= f.file_field :picture, :class=>"btn verde"%>
+  </div>  
+  <br>
 <% end %>
