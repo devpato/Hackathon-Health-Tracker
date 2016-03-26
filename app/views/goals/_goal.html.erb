@@ -1,6 +1,6 @@
-<b><%= goal.title %></b>
+<div class="container">
 <br />
-<p>
+<strong><p>
   To accomplish <%= goal.title %>,
    you will need to 
   <% if goal.type_id == 1 %>
@@ -26,4 +26,7 @@
   <% else %>
     by <% goal.date %>
   <% end %>
-</p>
+</p></strong>
+</div>
+<hr>
+
