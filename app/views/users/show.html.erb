@@ -10,10 +10,8 @@
   <br><br><br><br><br><br><br><br><br>
 
 
-  <% @goals.each do |goal| %>
-    <%= render goal %>
-  <% end %>
-
+  <br /> <br />
+  <br />
  <div class="container">
   <p>
   <label >Name:</label>
@@ -50,13 +48,7 @@
     <%= @user.username %>
   </p>
   <hr>
-  <p>
-    <label>Password:</label>
-    <%= @user.password %>
-  </p>
  </div> 
 
   <hr>
-  <%= link_to 'Edit', edit_user_path(@user) %> |
-  <%= link_to 'Back', users_path %>
 </div>  

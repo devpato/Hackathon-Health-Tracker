@@ -9,7 +9,6 @@
 	<h1>Tracking</h1>
 	<hr/>
   <%= link_to 'New Goal', new_goal_path, class: 'btn verde' %>
-	<%= link_to 'New Food', new_food_path, class: 'btn verde' %>
 	<br><br>
 
 	<div class="col-md-12">
@@ -90,7 +89,7 @@
 <div class="container">
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Foods</h1>
+<h1>Add Food</h1>
 <div class="input-group"> <span class="input-group-addon"><i class='glyphicon glyphicon-search'></i></span>
 
    <input id="filterz" type="text" class="form-control" placeholder="Type here...">
@@ -188,6 +187,8 @@ function drawBasic() {
       data.addColumn('number', 'Calories');
 
       data.addRows([
+          [new Date(2016, 3, 19), 1780], [new Date(2016, 3, 20), 1920],  
+          [new Date(2016, 3, 21), 2020], [new Date(2016, 3, 22), 2185],  
           [new Date(2016, 3, 23), 2000], [new Date(2016, 3, 24), 1985],  
           [new Date(2016, 3, 25), 2300],  [new Date(2016, 3, 26), 1791]
       ]);
