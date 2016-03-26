@@ -1,34 +1,36 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
+  <div class="ih-item circle effect1 col-sm-2   "><a href="#">
+        <div class="spinner"><div ><%= image_tag(@doctor.picture_url,:class=>"img-circle pull-left") if @doctor.picture.present? %></div></div>
+        
+        </a>
+  </div>
+  <br>
+  <h1 class="pull-left col-sm-9">Patient Info</h1>
+  <br><br><br><br><br><br><br><br><br>
 
-<p>
-  <strong>Name:</strong>
-  <%= @doctor.name %>
-</p>
-
-<p>
-  <strong>Lastname:</strong>
-  <%= @doctor.lastName %>
-</p>
-
-<p>
-  <strong>Area:</strong>
-  <%= @doctor.area %>
-</p>
-
-<p>
-  <strong>Age:</strong>
-  <%= @doctor.age %>
-</p>
-
-<p>
-  <strong>Picturename:</strong>
-  <%= @doctor.pictureName %>
-</p>
-
-<p>
-  <strong>Picture:</strong>
-  <%= image_tag(@doctor.picture_url, :width => 80) if @doctor.picture.present? %>
-</p>
-
-<%= link_to 'Edit', edit_doctor_path(@doctor) %> |
-<%= link_to 'Back', doctors_path %>
+ <div class="container">
+  <p>
+    <label>Name:</label>
+    <%= @doctor.name %>
+  </p>
+<hr>
+  <p>
+    <label>Lastname:</label>
+    <%= @doctor.lastName %>
+  </p>
+<hr>
+  <p>
+    <label>Area:</label>
+    <%= @doctor.area %>
+  </p>
+<hr>
+  <p>
+    <label>Age:</label>
+    <%= @doctor.age %>
+  </p>
+<hr>
+  </div>
+  <%= link_to 'Edit', edit_doctor_path(@doctor) %> |
+  <%= link_to 'Back', doctors_path %>
+</div>

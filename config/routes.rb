@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   resources :profilepics
   resources :users
   get 'azalea/index'
+  get 'users/new'
+  get 'doctors/new'
   root 'azalea#index'
 
   get 'login' => 'sessions#new'

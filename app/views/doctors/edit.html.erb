@@ -1,6 +1,11 @@
+<div class="container">
 <h1>Editing Doctor</h1>
 
 <%= render 'form' %>
-
-<%= link_to 'Show', @doctor %> |
-<%= link_to 'Back', doctors_path %>
+<div class="actions">
+ 		<button type="submit" class="btn verde" ><%= link_to 'Edit Patient', doctors_path %></button>
+ </div>
+<hr>
+	<%= link_to 'Show', @doctors %> |
+	<%= link_to 'Back', doctors_path %>
+</div>	

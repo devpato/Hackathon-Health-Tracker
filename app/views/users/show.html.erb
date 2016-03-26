@@ -1,54 +1,56 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
+  <div class="ih-item circle effect1 col-sm-2   "><a href="#">
+        <div class="spinner"><div ><%= image_tag(@user.picture_url,:class=>"img-circle pull-left") if @user.picture.present? %></div></div>
+        
+        </a>
+  </div>
+  <br>
+  <h1 class="pull-left col-sm-9">Patient Info</h1>
+  <br><br><br><br><br><br><br><br><br>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
-
-<p>
-  <strong>Lastname:</strong>
-  <%= @user.lastName %>
-</p>
-
-<p>
-  <strong>Age:</strong>
-  <%= @user.age %>
-</p>
-
-<p>
-  <strong>Sex:</strong>
-  <%= @user.sex %>
-</p>
-
-<p>
-  <strong>Height:</strong>
-  <%= @user.height %>
-</p>
-
-<p>
-  <strong>Weight:</strong>
-  <%= @user.weight %>
-</p>
-
-<p>
-  <strong>Picturename:</strong>
-  <%= @user.pictureName %>
-</p>
-
-<p>
-  <strong>Picture:</strong>
-  <%= image_tag(@user.picture_url, :width => 80) if @user.picture.present? %>
-</p>
-
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
-
-<p>
-  <strong>Password:</strong>
-  <%= @user.password %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+ <div class="container">
+  <p>
+  <label >Name:</label>
+    <%= @user.name %>
+  </p>
+  <hr>
+  <p>
+    <label>Lastname:</label>
+    <%= @user.lastName %>
+  </p>
+  <hr>
+  <p>
+    <label>Age:</label>
+    <%= @user.age %>
+  </p>
+  <hr>
+  <p>
+    <label>Sex:</label>
+    <%= @user.sex %>
+  </p>
+  <hr>
+  <p>
+    <label>Height:</label>
+    <%= @user.height %>
+  </p>
+  <hr>
+  <p>
+    <label>Weight:</label>
+    <%= @user.weight %>
+  </p>
+  <hr>
+  <p>
+    <label>Username:</label>
+    <%= @user.username %>
+  </p>
+  <hr>
+  <p>
+    <label>Password:</label>
+    <%= @user.password %>
+  </p>
+ </div> 
+  <hr>
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+  <%= link_to 'Back', users_path %>
+</div>  
