@@ -8,6 +8,8 @@
 
 User.delete_all
 Food.delete_all
+FoodEntry.delete_all
+Goal.delete_all
 
 @user1 = User.create(:name => 'Pato', :lastName => 'Vargas', :age => 21,
                      :sex => 'Male', :height => "6'2\"", :weight => 140,
@@ -25,6 +27,13 @@ Food.delete_all
 @entry = FoodEntry.create(:user_id => @user1.id,
                         :food_id => @sandwich.id,
                         :date => Time.now)
+
+@goal1 = Goal.create(:user_id => @user1.id,
+                     :type_id => 1,
+                     :title => 'Summer body',
+                     :end => 2,
+                     :date => nil,
+                     :quantity => 2)
 
 @food1 = Food.create(:rest_name => "Moe's",
                      :cal => 890,
