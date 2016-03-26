@@ -34,7 +34,9 @@
   </div>
   <div class="field">
     <%= f.label :picture %><br>
-    <%= f.file_field :picture, :class=>"btn verde"%>
-  </div>  
-  <br>
+    <%= f.file_field :picture,:class=>"btn verde" %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
 <% end %>
