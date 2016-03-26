@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :goals
   resources :foods
   resources :foods
   resources :foods
@@ -14,6 +15,7 @@ Rails.application.routes.draw do
   get 'azalea/index'
   get 'users/new'
   get 'doctors/new'
+  get 'foods/new'
   root 'azalea#index'
 
   get 'login' => 'sessions#new'

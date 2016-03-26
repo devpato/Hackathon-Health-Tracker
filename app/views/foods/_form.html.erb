@@ -13,27 +13,27 @@
 
   <div class="field">
     <%= f.label :res_Id %><br>
-    <%= f.number_field :res_Id %>
+    <%= f.number_field :res_Id,:class=>"form-control" %>
   </div>
   <div class="field">
     <%= f.label :cal %><br>
-    <%= f.number_field :cal %>
+    <%= f.number_field :cal,:class=>"form-control" %>
   </div>
   <div class="field">
     <%= f.label :fat %><br>
-    <%= f.number_field :fat %>
+    <%= f.number_field :fat,:class=>"form-control" %>
   </div>
   <div class="field">
     <%= f.label :sugar %><br>
-    <%= f.number_field :sugar %>
+    <%= f.number_field :sugar,:class=>"form-control" %>
   </div>
   <div class="field">
     <%= f.label :location %><br>
-    <%= f.text_field :location %>
+    <%= f.text_field :location,:class=>"form-control" %>
   </div>
   <div class="field">
-    <%= f.label :picture %><br>
-    <%= f.text_field :picture %>
+    <%= f.label :picture %><br>    
+    <%= f.file_field :picture,:class=>"btn verde" %>
   </div>
   <div class="actions">
     <%= f.submit %>

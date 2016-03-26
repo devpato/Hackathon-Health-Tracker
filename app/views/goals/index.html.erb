@@ -1,0 +1,57 @@
+<div class="container">
+<p id="notice"><%= notice %></p>
+
+<h1>My Goals</h1>
+<div class="input-group"> <span class="input-group-addon"><i class='glyphicon glyphicon-search'></i></span>
+
+   <input id="filter" type="text" class="form-control" placeholder="Type here...">
+   </div>
+   <br>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Title</th>
+      <th>End</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody class="searchable">
+    <% @goals.each do |goal| %>
+      <tr>
+        <td><%= goal.type_id %></td>
+        <td><%= goal.title %></td>
+        <td><%= goal.end %></td>
+        <td><%= goal.date %></td>
+        <td><button type="button" class="btn verde" ><%= link_to 'Show', goal %></td></button>
+        <td><button type="button" class="btn btn-warning" ><%= link_to 'Edit', edit_goal_path(goal) %></td></button>
+        <td><button type="button" class="btn btn-danger" ><%= link_to 'Destroy', goal, method: :delete, data: { confirm: 'Are you sure?' } %></td></button>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<button type="button" class="btn verde" ><%= link_to 'New Goal', new_goal_path %></button>
+<script>
+  $(document).ready(function () {
+
+    (function ($) {
+
+        $('#filter').keyup(function () {
+
+            var rex = new RegExp($(this).val(), 'i');
+            $('.searchable tr').hide();
+            $('.searchable tr').filter(function () {
+                return rex.test($(this).text());
+            }).show();
+
+        })
+
+    }(jQuery));
+
+});
+</script>
