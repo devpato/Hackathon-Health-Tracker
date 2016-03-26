@@ -4,18 +4,19 @@ Rails.application.routes.draw do
   resources :foods
   resources :foods
   get 'sessions/new'
-
-  resources :users
-  resources :users
-  resources :users
-  resources :doctors
   resources :doctors
   resources :profilepics
   resources :users
   get 'azalea/index'
   get 'users/new'
   get 'doctors/new'
+  get 'doctors/show'
+  get 'doctors/show'
+  get 'foods/show'
+  get 'goals/show'
+  get 'users/show'
   get 'foods/new'
+  get 'users/:id/tracking' => 'users#tracking'
   root 'azalea#index'
 
   get 'login' => 'sessions#new'
