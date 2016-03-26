@@ -6,9 +6,48 @@
 </p>
 
 <p>
+  <strong>Lastname:</strong>
+  <%= @user.lastName %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @user.age %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @user.sex %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @user.height %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @user.weight %>
+</p>
+
+<p>
+  <strong>Picturename:</strong>
+  <%= @user.pictureName %>
+</p>
+
+<p>
   <strong>Picture:</strong>
-  
-<%= image_tag(@user.pictureName, :width => 80) if @user.picture.present? %>
+  <%= image_tag(@user.picture_url, :width => 80) if @user.picture.present? %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @user.username %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @user.password %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |

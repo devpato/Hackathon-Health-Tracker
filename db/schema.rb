@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160326015850) do
+ActiveRecord::Schema.define(version: 20160326024334) do
 
   create_table "doctors", force: :cascade do |t|
     t.string   "name"
@@ -25,18 +25,18 @@ ActiveRecord::Schema.define(version: 20160326015850) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
     t.string   "name"
+    t.string   "lastName"
     t.integer  "age"
-    t.string   "username"
-    t.string   "password"
     t.string   "sex"
     t.string   "height"
     t.string   "weight"
-    t.string   "lastName"
     t.string   "pictureName"
     t.string   "picture"
+    t.string   "username"
+    t.string   "password"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end
