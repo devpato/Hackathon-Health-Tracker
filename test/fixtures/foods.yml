@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  res_Id: 1
+  cal: 1
+  fat: 1
+  sugar: 1
+  location: MyString
+  picture: MyString
+
+two:
+  res_Id: 1
+  cal: 1
+  fat: 1
+  sugar: 1
+  location: MyString
+  picture: MyString
