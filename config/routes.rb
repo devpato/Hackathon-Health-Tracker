@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get 'users/show'
   get 'foods/new'
   get 'users/:id/tracking' => 'users#tracking'
+  get 'users/tracking/id' => 'users#tracking'
   root 'azalea#index'
 
   get 'login' => 'sessions#new'

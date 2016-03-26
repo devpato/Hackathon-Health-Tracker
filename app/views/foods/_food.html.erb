@@ -1,7 +1,7 @@
 <div class="container">
 <p id="notice"><%= notice %></p>
   <div class="ih-item circle effect1 col-sm-2   "><a href="#">
-        <div class="spinner"><div ><%= image_tag(@food.picture_url,:class=>"img-circle pull-left") if @food.picture.present? %></div></div>
+        <div class="spinner"><div ><%= image_tag(food.picture_url,:class=>"img-circle pull-left") if food.picture.present? %></div></div>
         
         </a>
   </div>
@@ -10,35 +10,33 @@
   <br><br><br><br><br><br><br><br><br>
 <div class="container">
 <p>
-  <strong><%= @food.name %></strong>
+  <strong><%= food.name %></strong>
 </p>
 
 <p>
   <strong>Restaurant</strong>
-  <%= @food.rest_name%>
+  <%= food.rest_name%>
 </p>
 <hr>
 <p>
   <label>Cal:</label>
-  <%= @food.cal %>
+  <%= food.cal %>
 </p>
 <hr>
 <p>
   <label>Fat:</label>
-  <%= @food.fat %>
+  <%= food.fat %>
 </p>
 <hr>
 <p>
   <label>Sugar:</label>
-  <%= @food.sugar %>
+  <%= food.sugar %>
 </p>
 <hr>
 <p>
   <label>Location:</label>
-  <%= @food.location %>
+  <%= food.location %>
 </p>
 <hr>
 </div>
-<%= link_to 'Edit', edit_food_path(@food) %> |
-<%= link_to 'Back', foods_path %>
 </div>

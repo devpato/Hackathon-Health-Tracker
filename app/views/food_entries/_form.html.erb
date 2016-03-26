@@ -1,15 +1,5 @@
-<%= form_for(@food_entry) do |f| %>
-  <% if @food_entry.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@food_entry.errors.count, "error") %> prohibited this food_entry from being saved:</h2>
-
-      <ul>
-      <% @food_entry.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= form_for(FoodEntry.new) do |f| %>
+  
 <% end %>
 <div class="container">
 <p id="notice"><%= notice %></p>
@@ -60,8 +50,8 @@
         $('#filter').keyup(function () {
 
             var rex = new RegExp($(this).val(), 'i');
-            $('.searchable tr').hide();
-            $('.searchable tr').filter(function () {
+            $('.searchablez tr').hide();
+            $('.searchablez tr').filter(function () {
                 return rex.test($(this).text());
             }).show();
 
