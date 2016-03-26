@@ -12,6 +12,7 @@ class UsersController < ApplicationController
   def show
     @current_user = User.find_by(id: params[:id])
     @entries = @current_user.food_entries
+    @goals = @current_user.goals
   end
 
   # GET /users/new

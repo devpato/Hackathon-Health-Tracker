@@ -10,16 +10,9 @@
   <br><br><br><br><br><br><br><br><br>
 
 
-    <!-- we could do this: @entries.each do |entry| %>
-  <div class="container">
-      <ul>
-        <li>
-         Don't for get the < %  ! entry.food_id %>
-        </li>
-      </ul>
-     end %>
-  </div>
-    -->
+  <% @goals.each do |goal| %>
+    <%= render goal %>
+  <% end %>
 
  <div class="container">
   <p>
@@ -62,6 +55,7 @@
     <%= @user.password %>
   </p>
  </div> 
+
   <hr>
   <%= link_to 'Edit', edit_user_path(@user) %> |
   <%= link_to 'Back', users_path %>

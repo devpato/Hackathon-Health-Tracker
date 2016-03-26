@@ -1,0 +1,29 @@
+<b><%= goal.title %></b>
+<br />
+<p>
+  To accomplish <%= goal.title %>,
+   you will need to 
+  <% if goal.type_id == 1 %>
+    lose <%= goal.quantity %>
+    pounds
+  <% elsif goal.type_id == 2 %>
+    gain <%= goal.quantity %>
+    pounds
+  <% elsif goal.type_id == 3 %>
+    eat <%= goal.quantity %>
+    calories
+  <% else %>
+    burn <%= goal.quantiy %>
+    calories
+  <% end %>
+
+  <% if goal.end == 1 %>
+    daily.
+  <% elsif goal.end == 2 %>
+    weekly.
+  <% elsif goal.end == 3 %>
+    monthly.
+  <% else %>
+    by <% goal.date %>
+  <% end %>
+</p>
