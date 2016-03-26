@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  resources :profilepics
   resources :users
-
   get 'azalea/index'
   root 'azalea#index'
 

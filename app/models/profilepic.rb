@@ -1,3 +1,3 @@
-class User < ActiveRecord::Base
+class Profilepic < ActiveRecord::Base
 	mount_uploader :picture, PictureUploader
 end
